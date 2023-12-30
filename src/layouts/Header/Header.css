@@ -1,0 +1,147 @@
+.Header{
+    display: flex;
+    flex-direction: column;
+    position:sticky;
+    top:0;
+    z-index: 1000;
+}
+.headerTop{
+    height: 60px;
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+}
+.nav_left{
+    margin-left: 10px;
+    padding:5px 5px 2px 5px;
+    color:#fff;
+    border:1px solid #555;
+    cursor: pointer;
+    display: none;
+}
+.Header .logo{
+    width: 100%;
+    object-fit: cover;
+    height:40px;
+    padding-top: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.search_box{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+#category{
+height: 37px;
+padding: 10px;
+border-radius: 5px 0px 0px 5px;
+width: 8%;
+
+}
+.input{
+    height: 37px;
+    padding: 10px;
+    width: 100%;
+}
+.search_icon{
+    height: 37px !important;
+    background: #cd9042;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+}
+.nav_right{
+    display: flex;
+    justify-content: center;
+}
+.boxes{
+    color:#fff;
+}
+.boxes:first-child{
+    width: 130px;
+}
+.header_options{
+    display: flex;
+    flex-direction: column;
+    margin:0 10px;
+}
+.option_one{
+    font-size: 12px;
+}
+.option_second{
+    font-size: 14px;
+    font-weight: 800;
+}
+.basket{
+    display: flex;
+    align-items: center;
+}
+.basket_count{
+    border:1px solid gray;
+    padding: 1px;
+    border-radius: 5px;
+}
+.border:hover{
+    border:1px solid white;
+}
+.border1:hover{
+    border:2.5px solid orange;
+    border-radius: 5px; 
+}
+/* headerBottom */
+.headerBottom{
+    background:#000;
+    height: 50px;
+    color:#fff;
+    display: flex;
+    
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+.map{
+    margin-left: 1rem;
+    vertical-align: middle;
+}
+.options{
+margin-top: 8px;
+margin-left: 13vw;
+}
+.location .option_one{
+    font-size: 15px;
+}
+.location .option_second{
+    font-size: 18px;
+}
+.options .option_one{
+    color:#fff;
+    font-size: 18px;  
+}
+.options span{
+    margin-left: 2vw;
+}
+
+@media(max-width:700px){
+.headerTop{
+    display: flex;
+    flex-direction: column;
+    height:fit-content;
+}
+.search_box{
+    margin:0 1rem;
+}
+.nav_right{
+    margin:2rem;
+}
+.nav_right>.boxes{
+    padding:0 8px;
+}
+.headerBottom{
+    display: none;
+}
+.boxes:first-child {
+    width: 90px;
+}
+}
